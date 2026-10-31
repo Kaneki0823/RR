@@ -1,103 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#10080c">
-  <meta name="description" content="A little rose, made especially for Rain.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080307">
+    <meta name="description" content="A thousand little stars, gathered into one rose.">
+    <title>For Rain — A Thousand Stars</title>
 
-  <title>A Rose for Rain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main class="experience" id="experience">
-    <div class="background-glow glow-one"></div>
-    <div class="background-glow glow-two"></div>
-    <div class="background-grain"></div>
 
-    <div class="top-label" id="topLabel">
-      <span class="label-line"></span>
-      <span>A LITTLE SOMETHING FOR YOU</span>
-      <span class="label-line"></span>
-    </div>
+    <main class="experience" id="experience">
 
-    <section class="intro" id="intro">
-      <p class="eyebrow">made with a little love</p>
+        <canvas id="starCanvas"></canvas>
 
-      <h1>
-        For someone<br>
-        <span>special.</span>
-      </h1>
+        <div class="background-glow"></div>
+        <div class="vignette"></div>
 
-      <p class="intro-copy">
-        Some things are difficult to put into words.<br>
-        So, instead, I made you something.
-      </p>
+        <div class="top-label">
+            <span class="label-line"></span>
+            <span>A LITTLE UNIVERSE FOR YOU</span>
+            <span class="label-line"></span>
+        </div>
 
-      <button class="bloom-button" id="bloomButton" type="button">
-        <span class="button-shine"></span>
-        <span class="button-text">Open your little surprise</span>
-        <span class="button-heart">♡</span>
-      </button>
+        <section class="intro" id="intro">
+            <p class="eyebrow">SOMEWHERE IN THIS UNIVERSE</p>
 
-      <p class="tap-note">a tiny moment, just for you</p>
-    </section>
+            <h1>
+                A thousand stars,<br>
+                <span>one beautiful rose.</span>
+            </h1>
 
-    <section class="rose-scene" id="roseScene" aria-label="An animated rose">
-      <canvas id="roseCanvas" aria-hidden="true"></canvas>
+            <p class="intro-description">
+                I gathered a little piece of the night sky<br>
+                to make something just for you.
+            </p>
 
-      <div class="scene-vignette"></div>
+            <button id="bloomButton" class="open-button">
+                <span>Open your little surprise</span>
+                <span class="button-heart">♡</span>
+            </button>
 
-      <div class="rose-caption" id="roseCaption">
-        <span class="caption-line"></span>
-        <span>something beautiful, for you</span>
-        <span class="caption-line"></span>
-      </div>
-    </section>
+            <p class="tap-hint">TAP TO BEGIN</p>
+        </section>
 
-    <section class="dedication" id="dedication" aria-live="polite">
-      <div class="dedication-ornament">
-        <span></span>
-        <span class="ornament-heart">♡</span>
-        <span></span>
-      </div>
+        <section class="rose-section" id="roseSection">
 
-      <p class="dedication-prelude">and, with all my heart...</p>
+            <div class="rose-heading" id="roseHeading">
+                <span class="eyebrow">MADE FROM A THOUSAND LITTLE LIGHTS</span>
+                <h2>Watch the stars find their place.</h2>
+            </div>
 
-      <h2>this is for you <span class="rain-name">Rain</span></h2>
+            <div class="canvas-wrap">
+                <canvas id="roseCanvas"></canvas>
+            </div>
 
-      <p class="dedication-note">
-        A little reminder that you deserve beautiful things,
-        gentle days, and moments that make you smile.
-      </p>
+            <p class="formation-caption" id="formationCaption">
+                Every little light, finding its way...
+            </p>
 
-      <p class="signature">— Kei</p>
+        </section>
 
-      <div class="bottom-ornament">
-        <span>✦</span>
-        <span>made just for you</span>
-        <span>✦</span>
-      </div>
-    </section>
+        <section class="dedication" id="dedication">
 
-    <footer class="footer" id="footer">
-      <span>some feelings are better shown than said</span>
-    </footer>
+            <div class="dedication-line"></div>
 
-    <button class="replay-button" id="replayButton" type="button"
-            aria-label="Watch the rose bloom again">
-      <span>↻</span> watch it bloom again
-    </button>
-  </main>
+            <p class="dedication-small">A THOUSAND STARS COULD NEVER BE ENOUGH</p>
 
-  <script src="script.js"></script>
+            <p class="dedication-intro">this is for you</p>
+
+            <h2 class="rain-name">Rain</h2>
+
+            <p class="signature">— Kei</p>
+
+            <div class="dedication-divider">
+                <span></span>
+                <i>✦</i>
+                <span></span>
+            </div>
+
+            <p class="closing-message">
+                If I could gather every beautiful light in the sky,<br>
+                I would still choose to make something for you.
+            </p>
+
+            <p class="final-note">made with all my heart</p>
+
+            <button class="replay-button" id="replayButton">
+                <span>Watch it bloom again</span>
+                <span>↻</span>
+            </button>
+
+        </section>
+
+        <footer class="footer">
+            <span>AN UNIVERSE, JUST FOR YOU</span>
+            <span>✦</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
